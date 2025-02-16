@@ -23,4 +23,15 @@ public class SinglyLinkedList<E> {
             head = newNode;
         }
     }
+    
+    public void addLast(E data){
+        Node<E> newNode = new Node<E>(data);
+        if(isEmpty()){
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.setNext(newNode);
+            tail = newNode;
+        }
+    }
 }
