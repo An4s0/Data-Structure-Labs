@@ -1,8 +1,8 @@
 # Ignore all "lib" folders
-/**/bin/
+**/bin/
 
 # Ignore all ".vscode" folders
-/**/.vscode/
+**/.vscode/
 
 # Ignore all ".class" folders
-/**/src/*.class
+**/src/*.class
