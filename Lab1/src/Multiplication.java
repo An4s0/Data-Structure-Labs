@@ -1,9 +1,12 @@
 public class Multiplication {
     public static void main(String[] args) throws Exception {
+
+        // Define the arrays
         int[][] array2 = { { 1, 1, 2 }, { 2, 5, 2 }, { 4, 4, 4 }, { 3, 0, 0 } };
         int[][] array5 = { { 1, 1, 2 }, { 2, 5, 2 }, { 4, 4, 4 }, { 3, 0, 0 } };
         int[][] array6 = new int[3][4];
 
+        // Print the product of array 2 and array 5 in array 6
         System.out.println("Array6");
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 3; j++) {
