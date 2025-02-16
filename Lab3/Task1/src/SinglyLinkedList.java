@@ -37,15 +37,15 @@ public class SinglyLinkedList<E> {
         size++;
     }
 
-    public void addNode(E data, int position){
+    public void addNode(E data, int position) {
         Node<E> newNode = new Node<E>(data);
-        if (position == 0){
+        if (position == 0) {
             addFirst(data);
-        } else if (position == size){
+        } else if (position == size) {
             addLast(data);
-        } else if (position > 0 && position < size){
+        } else if (position > 0 && position < size) {
             Node<E> current = head;
-            for (int i = 1; i < position; i++){
+            for (int i = 1; i < position; i++) {
                 current = current.getNext();
             }
             newNode.setNext(current.getNext());
@@ -56,17 +56,28 @@ public class SinglyLinkedList<E> {
         }
     }
 
-    public void removeFirst(){
-        if(isEmpty()){
+    public void removeFirst() {
+        if (isEmpty()) {
             System.out.println("List is empty");
         } else {
             head = head.getNext();
             size--;
-            if(size == 0) {
+            if (size == 0) {
                 tail = null;
             }
         }
     }
 
+    public void findNode(E data) {
+        Node<E> current = head;
+        int count = 0;
+        while (current != null) {
+            if (current.getData().equals(data)) {
+                System.out.println("Value found at Node" + count);
+                return;
+            }
+            count++;
+        }
+    }
 
 }
