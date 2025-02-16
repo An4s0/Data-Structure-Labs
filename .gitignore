@@ -5,4 +5,4 @@
 **/.vscode/
 
 # Ignore all ".class" folders
-**/src/*.class
+**/*.class
