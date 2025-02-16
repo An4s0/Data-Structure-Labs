@@ -56,7 +56,17 @@ public class SinglyLinkedList<E> {
         }
     }
 
-
+    public void removeFirst(){
+        if(isEmpty()){
+            System.out.println("List is empty");
+        } else {
+            head = head.getNext();
+            size--;
+            if(size == 0) {
+                tail = null;
+            }
+        }
+    }
 
 
 }
